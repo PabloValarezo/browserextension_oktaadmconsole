@@ -6,8 +6,9 @@ This is a browser extension for ease of navigation in the Okta Admin Console.
 
 1. Create a local folder in your computer named `OktaExtension`
 2. Add the manifest.json and index.js files into it
-3. In Chrome, go to ... -> Extensions -> Manage. Enable Developer Mode
-4. Drag the OktaExtension folder to the Chrome Extensions page
+3. In Chrome, go to ... -> Extensions -> Manage Extensions
+4. Enable Developer Mode by toggling the switch
+5. Drag the OktaExtension folder to the Chrome Extensions page
 
 ## Notes
 - Edit index.js if you'd like, then make sure to `Reload` the extension after saving your changes
