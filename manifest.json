@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "OktaExtension",
+  "version": "0.2",
+  "description": "Displays Key Okta Attributes Under the User's Name",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.okta.com/*",
+        "https://*.okta-emea.com/*",
+        "https://*.oktapreview.com/*",
+        "https://*.okta-gov.com/*"
+      ],
+      "js": ["index.js"]
+    }
+  ]
+}
