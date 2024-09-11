@@ -2,7 +2,7 @@
 
 This is a browser extension for ease of navigation in the Okta Admin Console.
 
-<img width="796" alt="JaneDoeSampleExtension" src="https://github.com/user-attachments/assets/a583a07e-8e44-4b6c-aa91-0fcc6e893b66">
+<img width="796" alt="JaneDoeSampleExtension" src="https://github.com/user-attachments/assets/310ba705-a9c5-4f81-bfc4-ac4df9b81169">
 
 
 ## Installation
