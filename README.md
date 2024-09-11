@@ -2,6 +2,9 @@
 
 This is a browser extension for ease of navigation in the Okta Admin Console.
 
+<img width="796" alt="JaneDoeSampleExtension" src="https://github.com/user-attachments/assets/a583a07e-8e44-4b6c-aa91-0fcc6e893b66">
+
+
 ## Installation
 
 1. Create a local folder in your computer named `OktaExtension`
