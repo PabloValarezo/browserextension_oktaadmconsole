@@ -30,8 +30,3 @@ async function getJson(url) {
     const res = await fetch(url);
     return res.json();
 }
-
-function table(rows) {
-    const cells = rows.map(cols => '<td>' + cols[0] + '</td><td>' + cols[1] + '</td>').join('<td> | </td>');
-    return '<table style="border-spacing: 10px; border-collapse: separate; font-family: system-ui; font-size: 1rem;"><tr>' + cells + '</tr></table>';
-}
