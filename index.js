@@ -21,7 +21,7 @@ async function showUserInfo() {
         } else {
             html += 'Manager: ' + user.profile.manager + ' | ';
         }
-    }
+    } else html += 'Manager: (none) | ';
     html += 'Type: ' + user.profile.userType;
     document.querySelector('.subheader').innerHTML += html;
 }
