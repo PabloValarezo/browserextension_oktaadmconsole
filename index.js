@@ -5,7 +5,7 @@ if (location.pathname.includes('/admin/user/')) {
     // `googleAccount` and `adAccount` are 'boolean' (TRUE/FALSE) attributes that indicate an account has been provisioned each respectively
     // `employeeStatus` is an HR-sourced attribute indicating Active, Terminated, or Leave of Absence status
     // `manager` is the user manager's `email` value
-    showUserInfo('googleAccount,adAccount,employeeStatus,manager,userType'); // Set these
+    showUserInfo();
 }
 async function showUserInfo() {
     const user = await getJson('/api/v1/users/' + id);
