@@ -2,7 +2,8 @@
 
 This is a browser extension for ease of navigation in the Okta Admin Console.
 
-<img width="796" alt="366265365-310ba705-a9c5-4f81-bfc4-ac4df9b81169" src="https://github.com/user-attachments/assets/a42281d4-fc05-4e65-b10f-44962cbbd519">
+<img width="796" alt="366265365-310ba705-a9c5-4f81-bfc4-ac4df9b81169" src="https://github.com/user-attachments/assets/36125fe5-e7e8-4299-87ea-0a5852a00845">
+
 
 ## Installation
 
