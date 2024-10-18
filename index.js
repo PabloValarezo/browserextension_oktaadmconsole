@@ -3,7 +3,10 @@ const id = paths.pop() || paths.pop();
 
 if (location.pathname.includes('/admin/user/')) {
     showUserInfo();
+} else if (location.pathname.includes('/admin/group/')) {
+    showGroupInfo();
 }
+
 async function showUserInfo() {
     const user = await getJson('/api/v1/users/' + id);
     var html = '<br>';
@@ -24,6 +27,28 @@ async function showUserInfo() {
     } else html += 'Manager: (none) | ';
     html += 'Type: ' + user.profile.userType;
     document.querySelector('.subheader').innerHTML += html;
+}
+
+async function showGroupInfo() {
+    const group = await getJson('/api/v1/groups/' + id);
+    var html = '<span class="no-translate subheader">';
+    // The following group profile attributes are used in our Okta org. Update these to use yours.
+     if (group.profile.dynamic) html += 'Dynamic ⚡ | ';
+     if (group.profile.forAppAssignment) html += 'For App Assignment 📲 | ';
+     if (group.profile.pushToApp) html += 'Push Group 🫸🏼 | ';
+     if (group.profile.forUserProvisioning) html += 'Acct Provisioning ➡👷🏽 | ';
+     if (group.profile.policy) html += 'For Policy 📜 | ';
+     if (group.profile.forAppAdmin) html += 'App Admins 🧑🏼‍💻 | ';
+     html += '<br>Note to Admins: ' + group.profile.NoteToAdmins;
+    // if (user.profile.manager) {
+    //     const users = await getJson(`/api/v1/users?search=profile.email eq "${user.profile.manager}"`);
+    //     if (users.length > 0) {
+    //         html += `Manager: <a href="/admin/user/profile/view/${users[0].id}#tab-account" target="_blank">${user.profile.manager}</a> | `;
+    //     } else {
+    //         html += 'Manager: ' + user.profile.manager + ' | ';
+    //     }
+    // } else html += 'Manager: (none) | ';
+    document.querySelector('.group-desc').innerHTML += html;
 }
 
 async function getJson(url) {
