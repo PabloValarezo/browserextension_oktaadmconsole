@@ -10,10 +10,11 @@ This is a browser extension for ease of navigation in the Okta Admin Console.
 ## Installation
 
 1. Create a local folder in your computer named `OktaExtension`
-2. Add the `manifest.json` and `index.js` files into it (you can right-click on their filenames above and 'Save link as')
-3. In Chrome, go to ... -> Extensions -> Manage Extensions
-4. Enable Developer Mode by toggling the switch
-5. Drag the OktaExtension folder to the Chrome Extensions page; or, in the Extensions tab in Chrome click on 'Load Unpacked' and pick thr folder.
+2. Click on the `index.js` file link and click on the download icon at the top-right corner of the code.
+3. Repeat the process in step #2 for the `manifest.json` file
+4. In Chrome, go to ... -> Extensions -> Manage Extensions
+5. Enable Developer Mode by toggling the switch
+6. Drag the `OktaExtension` folder to the Chrome Extensions page; or, in the Extensions tab in Chrome click on 'Load Unpacked' and pick thr folder.
 
 ## Notes
 - Edit index.js if you'd like, then make sure to `Reload` the extension after saving your changes, then Reload the page in Okta to see the changes.
