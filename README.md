@@ -1,4 +1,6 @@
-10-Sep-2024
+24-Oct-2024
+
+### This is an example extension and requires specific Okta configuration settings to work
 
 This is a browser extension for ease of navigation in the Okta Admin Console.
 
