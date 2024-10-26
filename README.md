@@ -5,10 +5,10 @@
 This browser extension exposes profile data and improves navigation in the Okta Admin Console.
 
 User Page<BR>
-<img width="796" alt="366265365-310ba705-a9c5-4f81-bfc4-ac4df9b81169" src="https://github.com/user-attachments/assets/36125fe5-e7e8-4299-87ea-0a5852a00845">
+<img width="796" style="border: 2px solid blue;" alt="366265365-310ba705-a9c5-4f81-bfc4-ac4df9b81169" src="https://github.com/user-attachments/assets/36125fe5-e7e8-4299-87ea-0a5852a00845">
 
 Group Page<BR>
-<img width="613" alt="Screenshot 2024-10-26 at 3 31 29 PM" src="https://github.com/user-attachments/assets/b0748da1-9d85-4d4c-83b5-080d5889dfbd">
+<img width="613" style="border: 2px solid blue;" alt="Screenshot 2024-10-26 at 3 31 29 PM" src="https://github.com/user-attachments/assets/b0748da1-9d85-4d4c-83b5-080d5889dfbd">
 
 
 ## Installation
