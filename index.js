@@ -33,8 +33,6 @@ async function showUserInfo() {
 
 async function showGroupInfo() {
     const group = await getJson('/api/v1/groups/' + id);
-    var userId = group.profile.ownerUserID;
-    const groupOwner = await getJson('/api/v1/users/' + userId);
     var html = '<div style="display: block; margin-top: 0.428571425rem; color: #272727; font-size: 1.1487rem; font-weight: 400; line-height: 1.7142857">'
 
     // The following group profile attributes are used in our Okta org. 
@@ -49,6 +47,7 @@ async function showGroupInfo() {
     if (group.profile.policy) html += 'For Policy ✒️📜 | ';
     if (group.profile.forAppAdmin) html += 'App Admins 🧑🏼‍💻 | ';
     html += '<br>Note to Admins: ' + group.profile.NoteToAdmins;
+    html += '<div>'
     document.querySelector('.group-desc').innerHTML += html;
 }
 
